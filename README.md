@@ -25,7 +25,7 @@ From the AWS CLI for each hosted zone:
 
   `aws route53 create-hosted-zone --name <domain name> --caller-reference "%time%"`
 
-##Export a list of hosted zones
+## Export a list of hosted zones
 From the AWS CLI list the HostedZone Id and Name of the newly created (destination) hosted zones:
 
   `aws route53 list-hosted-zones --output text --query "HostedZones[].[Id,Name]"`
